@@ -1,9 +1,9 @@
-#Add Primitives
+## Add Primitives
 A plugin for the Godot Game Engine, capable of generating simple meshes for your game
 
 ***
 
-###Features
+### Features
 **Primitives**:
   * Box
   * Capsule
@@ -37,19 +37,19 @@ A plugin for the Godot Game Engine, capable of generating simple meshes for your
 
 ***
 
-###Install
+### Install
 
-#####Using Git
+##### Using Git
 Run the following command, remember to change the PLUGINS_FOLDER to Godot `addons` folder on your project:
 ```
 git clone https://github.com/TheHX/add_primitives.git PLUGINS_FOLDER
 ```
-#####Manual
+##### Manual
 Download the repository ZIP, unpack in the Godot `addons` on your project and rename the `add_primitives-master` folder to ```add_primitives```.
 
 ***
 
-###Usage
+### Usage
 Open Godot, and in editor go to `Scene->Project Settings`, and select "Plugins" tab, and enable the plugin. 
 
 If you don't see the plugin, click on the `Update` button. If it don't appear, check if the plugin is in the 
@@ -63,5 +63,5 @@ After enabling the plugin:
 
 ***
 
-###License
+### License
 This plugin is licensed under the [MIT license](https://github.com/TheHX/add_primitives/blob/master/LICENSE.md).
