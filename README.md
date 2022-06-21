@@ -24,3 +24,6 @@ Because these addons are copied with empty/clean project, there are no ```.impor
  * **scrolling_background**
 
  * **vector_icons**
+
+ * **scene_scatter**
+   paint with whole scenes; Editor.import() added.

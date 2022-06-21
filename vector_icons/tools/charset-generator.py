@@ -28,25 +28,30 @@
 import json, os
 
 GLYPHMAPS_DIR = "/home/geequlim/Desktop/react-native-vector-icons-master/glyphmaps/"
-OUTPUT_DIR = os.path.join( os.path.dirname(os.path.abspath(__file__)), "..", "fonts")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "fonts")
+
 
 def process_glyphmaps(file):
     name = os.path.basename(file).replace(".json", "")
     glyphmap = json.load(open(file))
     for key in glyphmap:
         glyphmap[key] = "\\u%04X" % (glyphmap[key])
-    
-    content = '''
+
+    content = """
 const FontData = preload("{0}.ttf")
 const Cheatsheet = {1}
-'''.format(name, json.dumps(glyphmap, sort_keys=True, indent="\t"))
-    file = open(os.path.join(OUTPUT_DIR, name + ".gd"), 'w')
+""".format(
+        name, json.dumps(glyphmap, sort_keys=True, indent="\t")
+    )
+    file = open(os.path.join(OUTPUT_DIR, name + ".gd"), "w")
     file.write(content.replace("\\\\", "\\"))
     file.close()
+
 
 def main():
     for f in os.listdir(GLYPHMAPS_DIR):
         process_glyphmaps(os.path.join(GLYPHMAPS_DIR, f))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
