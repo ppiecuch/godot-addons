@@ -7,23 +7,25 @@ Because these addons are copied with empty/clean project, there are no ```.impor
 
  * **arrow_shape**:
    cleanup file naming
+ * **arrow_shape**:
+   fixed and modifed for Godot3; Editor.import() added.
+ * **debug_overlay**
+   improvments and cleanup
+ * **metadata_inspector**
+ * **plugin_refresher**
+ * **polygon_builder**
+ * **perf_monitor**
+ * **sprite_quick_offset**
+ * **vector_icons**
+
+### Removed or replaced by native implementations:
 
  * **add_primitives**:
    fixed and updated for Godot3 _(editor integration)_
-
- * **arrow_shape**:
-   fixed and modifed for Godot3; Editor.import() added.
-
  * **godobuf**:
    fixed and modifed for Godot3
-
  * **platform2d**
-
  * **rmsmartshape2d**
-
- * **scrolling_background**
-
- * **vector_icons**
-
  * **scene_scatter**
    paint with whole scenes; Editor.import() added.
+ * **scrolling_background**
